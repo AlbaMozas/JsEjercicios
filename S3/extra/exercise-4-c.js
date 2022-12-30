@@ -11,17 +11,16 @@ const countries = [
 ];
 
 //función por encima del bucle para que funcione
-const borrarUno = (i) => {
-    console.log('borrar', i);
-    console.log(event.target); //esto es para que se vea por consola el boton que se borra
-    //const uno$$ = document.querySelectorAll('div')
-    const uno$$ = document.getElementById(i)
-    document.body.removeChild(uno$$);    
-  };
+// const borrarUno = (i) => {
+//     console.log('borrar', i);
+//     console.log(event.target); //esto es para que se vea por consola el boton que se borra
+//     //const uno$$ = document.querySelectorAll('div')
+//     const uno$$ = document.getElementById(i)
+//     document.body.removeChild(uno$$);    
+//   };
 
 for (let i = 0; i < countries.length; i++) {
     let newDivs$$ = document.createElement('div');
-    newDivs$$.id = i;
     document.body.appendChild(newDivs$$);
 
     let newH4$$ = document.createElement('h4');
@@ -31,7 +30,7 @@ for (let i = 0; i < countries.length; i++) {
 
     //cada boton llama a la función (mirar event.target para hacerlo difernte)
     //los obtienen los eventos del padre 
-    theButton$$.onclick = () => borrarUno(i);
+    theButton$$.onclick = () => newDivs$$.remove();
 
     newDivs$$.appendChild(newH4$$);
     newDivs$$.appendChild(img$$);
