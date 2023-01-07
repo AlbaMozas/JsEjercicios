@@ -10,6 +10,18 @@
 
 //Ejecuta varias veces la función father y haz finalmente un console.log de userAnwsers
 
+//const userAnwsers = [];
+    // function confirmExample(){
+    //     confirm()
+    // }
+    // function promptExample(){
+    //     propmt()
+    // }
+    // function father(){}
+
+    // guia de confirm y prompt
+    // const confirmValue = confirm('Soy un texto');
+    // const propmt = prompt('Soy un texto');
 
 const userAnwsers = [];
 const confirmValue = confirm('Soy un texto');

@@ -14,13 +14,13 @@
 
  
 const runTimeOut = async () => {
-    const promise = new Promise((resolve) => {
+    const promise = await new Promise((resolve) => {
         setTimeout(function () {
             resolve();
         }, 2000);
     })
 
-    await promise;
+    //await promise;
     console.log('Time out!');
 
     //promise.then(() => {console.log('Time out!')})

@@ -8,6 +8,11 @@
 
 //Ejecuta varias veces la función father y haz finalmente un console.log de numbersList
 
+// const numbersList = [];
+    // function sum(){}
+    // function substract(){}
+    // function father(){}
+
 
 const numbersList = [];
 
